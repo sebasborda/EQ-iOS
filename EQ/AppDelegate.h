@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ALTabBarController.h"
 
 @class ViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) IBOutlet UIWindow *window;
 
-@property (strong, nonatomic) ViewController *viewController;
+@property (strong, nonatomic) IBOutlet ALTabBarController *tabBarController;
 
 @end
