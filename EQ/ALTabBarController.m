@@ -40,7 +40,6 @@
 #pragma mark ALTabBarDelegate
 
 -(void)tabWasSelected:(NSInteger)index {
- 
     self.selectedIndex = index;
 }
 

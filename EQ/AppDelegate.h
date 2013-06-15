@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  EQ
 //
-//  Created by yo on 6/5/13.
-//  Copyright (c) 2013 Sebastian Borda. All rights reserved.
+//  Created by Sebastian Borda on 6/12/13.
+//  Copyright (c) 2013 EQ. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -14,7 +14,9 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) IBOutlet UIWindow *window;
-
 @property (strong, nonatomic) IBOutlet ALTabBarController *tabBarController;
+
+
+- (void)goToTabAtIndex:(int)index;
 
 @end

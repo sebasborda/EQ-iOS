@@ -24,6 +24,7 @@
 
 @property (nonatomic, weak) id<ALTabBarDelegate> delegate;
 @property (nonatomic, strong) UIButton *selectedButton;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *tabButtons;
  
 
 -(IBAction) touchButton:(id)sender;

@@ -14,13 +14,8 @@
 #import <Foundation/Foundation.h>
 #import "ALTabBarView.h"
 
-@interface ALTabBarController : UITabBarController <ALTabBarDelegate> {
+@interface ALTabBarController : UITabBarController <ALTabBarDelegate> 
 
-    ALTabBarView *customTabBarView;
-}
-
-@property (nonatomic, strong) IBOutlet ALTabBarView *customTabBarView;
-
--(void) hideExistingTabBar;
+@property (nonatomic, strong) ALTabBarView *customTabBarView;
 
 @end

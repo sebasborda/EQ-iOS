@@ -14,24 +14,24 @@
 @synthesize delegate;
 @synthesize selectedButton;
 
-- (id)initWithFrame:(CGRect)frame {
-    if ((self = [super initWithFrame:frame])) {
-        // Initialization code
+- (id)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        CGRect frame = self.frame;
+        frame.origin.y = 965;
+        self.frame = frame;
     }
     return self;
 }
 
 //Let the delegate know that a tab has been touched
 -(IBAction) touchButton:(id)sender {
-
     if( delegate != nil && [delegate respondsToSelector:@selector(tabWasSelected:)]) {
-        
-        if (selectedButton) {
-            [selectedButton setBackgroundImage:[UIImage imageNamed:@"Button.png"] forState:UIControlStateNormal];
+        for (UIButton *tab in self.tabButtons) {
+            tab.selected = NO;
         }
-        
-        selectedButton = ((UIButton *)sender);
-        [selectedButton setBackgroundImage:[UIImage imageNamed:@"Button_crystal.png"] forState:UIControlStateNormal];
+        selectedButton = sender;
+        selectedButton.selected = YES;
         [delegate tabWasSelected:selectedButton.tag];
     }
 }

@@ -2,11 +2,18 @@
 //  AppDelegate.m
 //  EQ
 //
-//  Created by yo on 6/5/13.
-//  Copyright (c) 2013 Sebastian Borda. All rights reserved.
+//  Created by Sebastian Borda on 6/12/13.
+//  Copyright (c) 2013 EQ. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "EQLoginViewController.h"
+
+@interface AppDelegate()
+
+@property (nonatomic,strong) UINavigationController *navigationController;
+
+@end
 
 @implementation AppDelegate
 
@@ -14,7 +21,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.rootViewController = self.tabBarController;
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:[EQLoginViewController new]];
+    self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -44,6 +52,13 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - custom methods
+
+- (void)goToTabAtIndex:(int)index{
+    [self.navigationController pushViewController:self.tabBarController animated:YES];
+    self.tabBarController.selectedIndex = index;
 }
 
 @end
