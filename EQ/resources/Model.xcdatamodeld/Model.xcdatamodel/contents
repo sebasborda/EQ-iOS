@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12C3103" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Articulo" representedClassName="Articulo" syncable="YES">
         <attribute name="activo" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="cantidadPredeterminada" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="codigo" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="creado" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="descripcion" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="disponibilidadID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="disponibilidad" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="imagenURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="minimoPedido" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
@@ -54,7 +54,7 @@
         <relationship name="lineaDeVenta" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="LineaVTA" inverseName="cliente" inverseEntity="LineaVTA" indexed="YES" syncable="YES"/>
         <relationship name="pedidos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pedido" inverseName="cliente" inverseEntity="Pedido" indexed="YES" syncable="YES"/>
         <relationship name="vendedor" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Vendedor" inverseName="clienteVendedor" inverseEntity="Vendedor" indexed="YES" syncable="YES"/>
-        <relationship name="venta" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Venta" inverseName="cliente" inverseEntity="Venta" indexed="YES" syncable="YES"/>
+        <relationship name="venta" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Venta" inverseName="cliente" inverseEntity="Venta" indexed="YES" syncable="YES"/>
         <relationship name="zona" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Provincia" inverseName="zonaClientes" inverseEntity="Provincia" indexed="YES" syncable="YES"/>
         <relationship name="zonaEnvio" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ZonaEnvio" inverseName="clientes" inverseEntity="ZonaEnvio" indexed="YES" syncable="YES"/>
     </entity>
@@ -70,7 +70,7 @@
         <attribute name="condicionDeVenta" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="diasDeAtraso" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="empresa" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="fecha" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="importe" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
         <attribute name="importeConDescuento" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
@@ -101,15 +101,17 @@
         <attribute name="activo" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="actualizado" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="descuento" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="descuento3" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="descuento4" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="estado" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="importe" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
         <attribute name="latitud" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="longitud" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="neto" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
         <attribute name="observaciones" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sincronizacion" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="subTotal" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="total" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
         <relationship name="cliente" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Cliente" inverseName="pedidos" inverseEntity="Cliente" indexed="YES" syncable="YES"/>
         <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ItemPedido" inverseName="pedido" inverseEntity="ItemPedido" indexed="YES" syncable="YES"/>
         <relationship name="vendedor" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Vendedor" inverseName="pedidos" inverseEntity="Vendedor" indexed="YES" syncable="YES"/>
@@ -158,10 +160,10 @@
         <attribute name="cantidad" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="comprobante" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="empresa" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="fecha" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="importe" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
-        <relationship name="articulos" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Articulo" inverseName="ventas" inverseEntity="Articulo" indexed="YES" syncable="YES"/>
+        <relationship name="articulos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Articulo" inverseName="ventas" inverseEntity="Articulo" indexed="YES" syncable="YES"/>
         <relationship name="cliente" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Cliente" inverseName="venta" inverseEntity="Cliente" indexed="YES" syncable="YES"/>
         <relationship name="vendedor" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Vendedor" inverseName="venta" inverseEntity="Vendedor" indexed="YES" syncable="YES"/>
     </entity>
@@ -173,20 +175,20 @@
         <relationship name="clientes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Cliente" inverseName="zonaEnvio" inverseEntity="Cliente" indexed="YES" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Articulo" positionX="160" positionY="192" width="128" height="285"/>
+        <element name="Cliente" positionX="160" positionY="192" width="128" height="615"/>
+        <element name="CondPag" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="CtaCte" positionX="160" positionY="192" width="128" height="210"/>
         <element name="Expreso" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="ItemPedido" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="LineaVTA" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="Pedido" positionX="160" positionY="192" width="128" height="300"/>
+        <element name="Precio" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="Provincia" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="TipoIvas" positionX="160" positionY="192" width="128" height="120"/>
         <element name="Usuario" positionX="160" positionY="192" width="128" height="120"/>
         <element name="Vendedor" positionX="160" positionY="192" width="128" height="195"/>
         <element name="Venta" positionX="160" positionY="192" width="128" height="195"/>
-        <element name="Pedido" positionX="160" positionY="192" width="128" height="270"/>
-        <element name="Articulo" positionX="160" positionY="192" width="128" height="285"/>
-        <element name="CtaCte" positionX="160" positionY="192" width="128" height="210"/>
-        <element name="Provincia" positionX="160" positionY="192" width="128" height="120"/>
-        <element name="LineaVTA" positionX="160" positionY="192" width="128" height="120"/>
-        <element name="ItemPedido" positionX="160" positionY="192" width="128" height="90"/>
-        <element name="TipoIvas" positionX="160" positionY="192" width="128" height="120"/>
         <element name="ZonaEnvio" positionX="160" positionY="192" width="128" height="120"/>
-        <element name="Cliente" positionX="160" positionY="192" width="128" height="615"/>
-        <element name="Precio" positionX="160" positionY="192" width="128" height="105"/>
-        <element name="CondPag" positionX="160" positionY="192" width="128" height="120"/>
     </elements>
 </model>

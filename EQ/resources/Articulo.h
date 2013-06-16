@@ -2,7 +2,7 @@
 //  Articulo.h
 //  EQ
 //
-//  Created by Sebastian Borda on 6/12/13.
+//  Created by Sebastian Borda on 6/15/13.
 //  Copyright (c) 2013 EQ. All rights reserved.
 //
 
@@ -18,7 +18,7 @@
 @property (nonatomic, retain) NSString * codigo;
 @property (nonatomic, retain) NSDate * creado;
 @property (nonatomic, retain) NSString * descripcion;
-@property (nonatomic, retain) NSNumber * disponibilidadID;
+@property (nonatomic, retain) NSString * disponibilidad;
 @property (nonatomic, retain) NSNumber * identifier;
 @property (nonatomic, retain) NSString * imagenURL;
 @property (nonatomic, retain) NSNumber * minimoPedido;

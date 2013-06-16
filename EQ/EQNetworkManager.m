@@ -13,7 +13,15 @@
 
 + (void)executeRequest:(EQRequest *)request{
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request.urlRequest success:^(NSURLRequest *urlRequest, NSHTTPURLResponse *response, id JSON) {
-        request.successBlock(JSON);
+        int errorCode = [JSON[@"error"] intValue];
+        if (errorCode > 0) {
+            NSError *error = [NSError errorWithDomain:@"EQServer" code:errorCode userInfo:@{@"errorMessage":JSON[@"message"]}];
+            request.failBlock(error);
+        } else {
+            NSArray *jsonData = JSON[@"data"];
+            request.successBlock(jsonData);
+        }
+        
     } failure:^(NSURLRequest *urlRequest, NSHTTPURLResponse *response, NSError *error, id JSON){
         request.failBlock(error);
     }];

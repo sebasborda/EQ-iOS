@@ -18,5 +18,7 @@
 
 
 - (void)goToTabAtIndex:(int)index;
+- (void)lockUI;
+- (void)unLockUI;
 
 @end

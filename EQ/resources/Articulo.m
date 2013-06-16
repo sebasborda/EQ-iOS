@@ -2,7 +2,7 @@
 //  Articulo.m
 //  EQ
 //
-//  Created by Sebastian Borda on 6/12/13.
+//  Created by Sebastian Borda on 6/15/13.
 //  Copyright (c) 2013 EQ. All rights reserved.
 //
 
@@ -19,7 +19,7 @@
 @dynamic codigo;
 @dynamic creado;
 @dynamic descripcion;
-@dynamic disponibilidadID;
+@dynamic disponibilidad;
 @dynamic identifier;
 @dynamic imagenURL;
 @dynamic minimoPedido;

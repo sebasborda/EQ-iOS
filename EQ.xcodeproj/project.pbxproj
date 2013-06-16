@@ -40,17 +40,22 @@
 		6B2D5174176BD8A30044AF24 /* EQLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D5173176BD8A30044AF24 /* EQLoginViewModel.m */; };
 		6B2D5178176BD8E10044AF24 /* NSString+EQUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D5177176BD8E10044AF24 /* NSString+EQUtils.m */; };
 		6B2D517E176BE99A0044AF24 /* EQDataLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D517D176BE99A0044AF24 /* EQDataLayer.m */; };
+		6B2D5181176CC5F50044AF24 /* EQDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D5180176CC5F50044AF24 /* EQDataManager.m */; };
+		6B2D5198176CD7110044AF24 /* Cliente.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D5194176CD70D0044AF24 /* Cliente.m */; };
+		6B2D519C176CF6D00044AF24 /* Articulo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D519B176CF6CE0044AF24 /* Articulo.m */; };
+		6B2D519F176D2EA70044AF24 /* Pedido.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D519E176D2EA50044AF24 /* Pedido.m */; };
+		6B2D51A2176D66B10044AF24 /* CtaCte.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D51A1176D66AF0044AF24 /* CtaCte.m */; };
+		6B2D51A5176D66B90044AF24 /* Venta.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D51A4176D66B60044AF24 /* Venta.m */; };
+		6B2D51A8176D6D420044AF24 /* EQBlockUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D51A7176D6D410044AF24 /* EQBlockUI.m */; };
+		6B2D51AB176D7E850044AF24 /* EQProductsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D51AA176D7E850044AF24 /* EQProductsViewModel.m */; };
+		6B2D51AE176D7FB20044AF24 /* EQProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B2D51AD176D7FB20044AF24 /* EQProductCell.xib */; };
+		6B2D51B1176D8A530044AF24 /* EQProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D51B0176D8A530044AF24 /* EQProductCell.m */; };
 		6B73A2EF17694F5C00C53653 /* TipoIvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73A2EE17694F5C00C53653 /* TipoIvas.m */; };
-		6B73A2F217694F5D00C53653 /* Pedido.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73A2F117694F5D00C53653 /* Pedido.m */; };
 		6B73A2F517694F5D00C53653 /* Vendedor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73A2F417694F5D00C53653 /* Vendedor.m */; };
 		6B73A2F817694F5D00C53653 /* Precio.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73A2F717694F5D00C53653 /* Precio.m */; };
-		6B73A2FB17694F5E00C53653 /* CtaCte.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73A2FA17694F5D00C53653 /* CtaCte.m */; };
 		6B73A2FE17694F5E00C53653 /* Provincia.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73A2FD17694F5E00C53653 /* Provincia.m */; };
-		6B73A30117694F5E00C53653 /* Articulo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73A30017694F5E00C53653 /* Articulo.m */; };
-		6B73A30417694F5E00C53653 /* Cliente.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73A30317694F5E00C53653 /* Cliente.m */; };
 		6B73A30717694F5E00C53653 /* ItemPedido.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73A30617694F5E00C53653 /* ItemPedido.m */; };
 		6B73A30A17694F5E00C53653 /* Expreso.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73A30917694F5E00C53653 /* Expreso.m */; };
-		6B73A30D17694F5E00C53653 /* Venta.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73A30C17694F5E00C53653 /* Venta.m */; };
 		6B73A31017694F5E00C53653 /* Usuario.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73A30F17694F5E00C53653 /* Usuario.m */; };
 		6B73A31317694F5F00C53653 /* CondPag.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73A31217694F5F00C53653 /* CondPag.m */; };
 		6B73A31617694F5F00C53653 /* ZonaEnvio.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73A31517694F5F00C53653 /* ZonaEnvio.m */; };
@@ -228,28 +233,37 @@
 		6B2D5177176BD8E10044AF24 /* NSString+EQUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EQUtils.m"; sourceTree = "<group>"; };
 		6B2D517C176BE99A0044AF24 /* EQDataLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQDataLayer.h; sourceTree = "<group>"; };
 		6B2D517D176BE99A0044AF24 /* EQDataLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQDataLayer.m; sourceTree = "<group>"; };
+		6B2D517F176CC5F40044AF24 /* EQDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQDataManager.h; sourceTree = "<group>"; };
+		6B2D5180176CC5F50044AF24 /* EQDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQDataManager.m; sourceTree = "<group>"; };
+		6B2D5193176CD70C0044AF24 /* Cliente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cliente.h; path = EQ/resources/Cliente.h; sourceTree = SOURCE_ROOT; };
+		6B2D5194176CD70D0044AF24 /* Cliente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cliente.m; path = EQ/resources/Cliente.m; sourceTree = SOURCE_ROOT; };
+		6B2D519A176CF6CB0044AF24 /* Articulo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Articulo.h; path = EQ/resources/Articulo.h; sourceTree = SOURCE_ROOT; };
+		6B2D519B176CF6CE0044AF24 /* Articulo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Articulo.m; path = EQ/resources/Articulo.m; sourceTree = SOURCE_ROOT; };
+		6B2D519D176D2EA20044AF24 /* Pedido.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pedido.h; path = EQ/resources/Pedido.h; sourceTree = SOURCE_ROOT; };
+		6B2D519E176D2EA50044AF24 /* Pedido.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Pedido.m; path = EQ/resources/Pedido.m; sourceTree = SOURCE_ROOT; };
+		6B2D51A0176D66AD0044AF24 /* CtaCte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CtaCte.h; path = EQ/resources/CtaCte.h; sourceTree = SOURCE_ROOT; };
+		6B2D51A1176D66AF0044AF24 /* CtaCte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CtaCte.m; path = EQ/resources/CtaCte.m; sourceTree = SOURCE_ROOT; };
+		6B2D51A3176D66B30044AF24 /* Venta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Venta.h; path = EQ/resources/Venta.h; sourceTree = SOURCE_ROOT; };
+		6B2D51A4176D66B60044AF24 /* Venta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Venta.m; path = EQ/resources/Venta.m; sourceTree = SOURCE_ROOT; };
+		6B2D51A6176D6D410044AF24 /* EQBlockUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQBlockUI.h; sourceTree = "<group>"; };
+		6B2D51A7176D6D410044AF24 /* EQBlockUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQBlockUI.m; sourceTree = "<group>"; };
+		6B2D51A9176D7E850044AF24 /* EQProductsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQProductsViewModel.h; sourceTree = "<group>"; };
+		6B2D51AA176D7E850044AF24 /* EQProductsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQProductsViewModel.m; sourceTree = "<group>"; };
+		6B2D51AD176D7FB20044AF24 /* EQProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EQProductCell.xib; sourceTree = "<group>"; };
+		6B2D51AF176D8A530044AF24 /* EQProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQProductCell.h; sourceTree = "<group>"; };
+		6B2D51B0176D8A530044AF24 /* EQProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQProductCell.m; sourceTree = "<group>"; };
 		6B73A2ED17694F5C00C53653 /* TipoIvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TipoIvas.h; path = EQ/resources/TipoIvas.h; sourceTree = SOURCE_ROOT; };
 		6B73A2EE17694F5C00C53653 /* TipoIvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TipoIvas.m; path = EQ/resources/TipoIvas.m; sourceTree = SOURCE_ROOT; };
-		6B73A2F017694F5D00C53653 /* Pedido.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pedido.h; path = EQ/resources/Pedido.h; sourceTree = SOURCE_ROOT; };
-		6B73A2F117694F5D00C53653 /* Pedido.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Pedido.m; path = EQ/resources/Pedido.m; sourceTree = SOURCE_ROOT; };
 		6B73A2F317694F5D00C53653 /* Vendedor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vendedor.h; path = EQ/resources/Vendedor.h; sourceTree = SOURCE_ROOT; };
 		6B73A2F417694F5D00C53653 /* Vendedor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Vendedor.m; path = EQ/resources/Vendedor.m; sourceTree = SOURCE_ROOT; };
 		6B73A2F617694F5D00C53653 /* Precio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Precio.h; path = EQ/resources/Precio.h; sourceTree = SOURCE_ROOT; };
 		6B73A2F717694F5D00C53653 /* Precio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Precio.m; path = EQ/resources/Precio.m; sourceTree = SOURCE_ROOT; };
-		6B73A2F917694F5D00C53653 /* CtaCte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CtaCte.h; path = EQ/resources/CtaCte.h; sourceTree = SOURCE_ROOT; };
-		6B73A2FA17694F5D00C53653 /* CtaCte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CtaCte.m; path = EQ/resources/CtaCte.m; sourceTree = SOURCE_ROOT; };
 		6B73A2FC17694F5E00C53653 /* Provincia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Provincia.h; path = EQ/resources/Provincia.h; sourceTree = SOURCE_ROOT; };
 		6B73A2FD17694F5E00C53653 /* Provincia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Provincia.m; path = EQ/resources/Provincia.m; sourceTree = SOURCE_ROOT; };
-		6B73A2FF17694F5E00C53653 /* Articulo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Articulo.h; path = EQ/resources/Articulo.h; sourceTree = SOURCE_ROOT; };
-		6B73A30017694F5E00C53653 /* Articulo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Articulo.m; path = EQ/resources/Articulo.m; sourceTree = SOURCE_ROOT; };
-		6B73A30217694F5E00C53653 /* Cliente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cliente.h; path = EQ/resources/Cliente.h; sourceTree = SOURCE_ROOT; };
-		6B73A30317694F5E00C53653 /* Cliente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cliente.m; path = EQ/resources/Cliente.m; sourceTree = SOURCE_ROOT; };
 		6B73A30517694F5E00C53653 /* ItemPedido.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemPedido.h; path = EQ/resources/ItemPedido.h; sourceTree = SOURCE_ROOT; };
 		6B73A30617694F5E00C53653 /* ItemPedido.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemPedido.m; path = EQ/resources/ItemPedido.m; sourceTree = SOURCE_ROOT; };
 		6B73A30817694F5E00C53653 /* Expreso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Expreso.h; path = EQ/resources/Expreso.h; sourceTree = SOURCE_ROOT; };
 		6B73A30917694F5E00C53653 /* Expreso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Expreso.m; path = EQ/resources/Expreso.m; sourceTree = SOURCE_ROOT; };
-		6B73A30B17694F5E00C53653 /* Venta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Venta.h; path = EQ/resources/Venta.h; sourceTree = SOURCE_ROOT; };
-		6B73A30C17694F5E00C53653 /* Venta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Venta.m; path = EQ/resources/Venta.m; sourceTree = SOURCE_ROOT; };
 		6B73A30E17694F5E00C53653 /* Usuario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Usuario.h; path = EQ/resources/Usuario.h; sourceTree = SOURCE_ROOT; };
 		6B73A30F17694F5E00C53653 /* Usuario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Usuario.m; path = EQ/resources/Usuario.m; sourceTree = SOURCE_ROOT; };
 		6B73A31117694F5E00C53653 /* CondPag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CondPag.h; path = EQ/resources/CondPag.h; sourceTree = SOURCE_ROOT; };
@@ -264,7 +278,7 @@
 		967BAC16176571140028AED5 /* ALTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTabBarView.h; sourceTree = "<group>"; };
 		967BAC17176571140028AED5 /* ALTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTabBarView.m; sourceTree = "<group>"; };
 		967BAC1A176571380028AED5 /* TabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarView.xib; sourceTree = "<group>"; };
-		967BAC1C176572A50028AED5 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		967BAC1C176572A50028AED5 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = resources/MainWindow.xib; sourceTree = "<group>"; };
 		967BAC1F17657C170028AED5 /* EQMainScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQMainScreenViewController.h; sourceTree = "<group>"; };
 		967BAC2017657C170028AED5 /* EQMainScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQMainScreenViewController.m; sourceTree = "<group>"; };
 		967BAC2117657C170028AED5 /* EQMainScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EQMainScreenViewController.xib; sourceTree = "<group>"; };
@@ -402,9 +416,12 @@
 		6B2D5115176ABD070044AF24 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				6B2D51AC176D7F6C0044AF24 /* product cell */,
 				6B2D5116176ABD580044AF24 /* EQProductsViewController.h */,
 				6B2D5117176ABD580044AF24 /* EQProductsViewController.m */,
 				6B2D5118176ABD580044AF24 /* EQProductsViewController.xib */,
+				6B2D51A9176D7E850044AF24 /* EQProductsViewModel.h */,
+				6B2D51AA176D7E850044AF24 /* EQProductsViewModel.m */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -511,13 +528,27 @@
 			children = (
 				6B2D5176176BD8E10044AF24 /* NSString+EQUtils.h */,
 				6B2D5177176BD8E10044AF24 /* NSString+EQUtils.m */,
+				6B2D51A6176D6D410044AF24 /* EQBlockUI.h */,
+				6B2D51A7176D6D410044AF24 /* EQBlockUI.m */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		6B2D51AC176D7F6C0044AF24 /* product cell */ = {
+			isa = PBXGroup;
+			children = (
+				6B2D51AD176D7FB20044AF24 /* EQProductCell.xib */,
+				6B2D51AF176D8A530044AF24 /* EQProductCell.h */,
+				6B2D51B0176D8A530044AF24 /* EQProductCell.m */,
+			);
+			name = "product cell";
 			sourceTree = "<group>";
 		};
 		6B73A2BC1769443400C53653 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				6B2D5193176CD70C0044AF24 /* Cliente.h */,
+				6B2D5194176CD70D0044AF24 /* Cliente.m */,
 				6B73A31717694F5F00C53653 /* LineaVTA.h */,
 				6B73A31817694F6000C53653 /* LineaVTA.m */,
 				6B73A31417694F5F00C53653 /* ZonaEnvio.h */,
@@ -526,28 +557,26 @@
 				6B73A31217694F5F00C53653 /* CondPag.m */,
 				6B73A30E17694F5E00C53653 /* Usuario.h */,
 				6B73A30F17694F5E00C53653 /* Usuario.m */,
-				6B73A30B17694F5E00C53653 /* Venta.h */,
-				6B73A30C17694F5E00C53653 /* Venta.m */,
 				6B73A30817694F5E00C53653 /* Expreso.h */,
 				6B73A30917694F5E00C53653 /* Expreso.m */,
 				6B73A30517694F5E00C53653 /* ItemPedido.h */,
 				6B73A30617694F5E00C53653 /* ItemPedido.m */,
-				6B73A30217694F5E00C53653 /* Cliente.h */,
-				6B73A30317694F5E00C53653 /* Cliente.m */,
-				6B73A2FF17694F5E00C53653 /* Articulo.h */,
-				6B73A30017694F5E00C53653 /* Articulo.m */,
 				6B73A2FC17694F5E00C53653 /* Provincia.h */,
 				6B73A2FD17694F5E00C53653 /* Provincia.m */,
-				6B73A2F917694F5D00C53653 /* CtaCte.h */,
-				6B73A2FA17694F5D00C53653 /* CtaCte.m */,
 				6B73A2F617694F5D00C53653 /* Precio.h */,
 				6B73A2F717694F5D00C53653 /* Precio.m */,
 				6B73A2F317694F5D00C53653 /* Vendedor.h */,
 				6B73A2F417694F5D00C53653 /* Vendedor.m */,
-				6B73A2F017694F5D00C53653 /* Pedido.h */,
-				6B73A2F117694F5D00C53653 /* Pedido.m */,
 				6B73A2ED17694F5C00C53653 /* TipoIvas.h */,
 				6B73A2EE17694F5C00C53653 /* TipoIvas.m */,
+				6B2D519A176CF6CB0044AF24 /* Articulo.h */,
+				6B2D519B176CF6CE0044AF24 /* Articulo.m */,
+				6B2D519D176D2EA20044AF24 /* Pedido.h */,
+				6B2D519E176D2EA50044AF24 /* Pedido.m */,
+				6B2D51A3176D66B30044AF24 /* Venta.h */,
+				6B2D51A4176D66B60044AF24 /* Venta.m */,
+				6B2D51A0176D66AD0044AF24 /* CtaCte.h */,
+				6B2D51A1176D66AF0044AF24 /* CtaCte.m */,
 			);
 			name = Domain;
 			path = domain;
@@ -560,6 +589,8 @@
 				967BABDD1765265A0028AED5 /* Model.xcdatamodeld */,
 				6B2D517C176BE99A0044AF24 /* EQDataLayer.h */,
 				6B2D517D176BE99A0044AF24 /* EQDataLayer.m */,
+				6B2D517F176CC5F40044AF24 /* EQDataManager.h */,
+				6B2D5180176CC5F50044AF24 /* EQDataManager.m */,
 			);
 			name = CoreData;
 			path = resources;
@@ -688,6 +719,7 @@
 		96AC12831760195E00B9152B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				967BAC1C176572A50028AED5 /* MainWindow.xib */,
 				96AC128B1760195F00B9152B /* AppDelegate.h */,
 				96AC128C1760195F00B9152B /* AppDelegate.m */,
 				96AC12841760195E00B9152B /* EQ-Info.plist */,
@@ -705,7 +737,6 @@
 			isa = PBXGroup;
 			children = (
 				96AC12A317601AAB00B9152B /* images */,
-				967BAC1C176572A50028AED5 /* MainWindow.xib */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -966,6 +997,7 @@
 				6B2D5138176ABE2E0044AF24 /* EQGoalsViewController.xib in Resources */,
 				6B2D513E176ABE6E0044AF24 /* EQCommunicationsViewController.xib in Resources */,
 				6B2D5140176B80D50044AF24 /* EQSalesViewController.xib in Resources */,
+				6B2D51AE176D7FB20044AF24 /* EQProductCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -985,16 +1017,11 @@
 				967BAC2917657C5C0028AED5 /* EQLoginViewController.m in Sources */,
 				967BAC2E17657C9B0028AED5 /* EQBaseViewController.m in Sources */,
 				6B73A2EF17694F5C00C53653 /* TipoIvas.m in Sources */,
-				6B73A2F217694F5D00C53653 /* Pedido.m in Sources */,
 				6B73A2F517694F5D00C53653 /* Vendedor.m in Sources */,
 				6B73A2F817694F5D00C53653 /* Precio.m in Sources */,
-				6B73A2FB17694F5E00C53653 /* CtaCte.m in Sources */,
 				6B73A2FE17694F5E00C53653 /* Provincia.m in Sources */,
-				6B73A30117694F5E00C53653 /* Articulo.m in Sources */,
-				6B73A30417694F5E00C53653 /* Cliente.m in Sources */,
 				6B73A30717694F5E00C53653 /* ItemPedido.m in Sources */,
 				6B73A30A17694F5E00C53653 /* Expreso.m in Sources */,
-				6B73A30D17694F5E00C53653 /* Venta.m in Sources */,
 				6B73A31017694F5E00C53653 /* Usuario.m in Sources */,
 				6B73A31317694F5F00C53653 /* CondPag.m in Sources */,
 				6B73A31617694F5F00C53653 /* ZonaEnvio.m in Sources */,
@@ -1023,6 +1050,15 @@
 				6B2D5174176BD8A30044AF24 /* EQLoginViewModel.m in Sources */,
 				6B2D5178176BD8E10044AF24 /* NSString+EQUtils.m in Sources */,
 				6B2D517E176BE99A0044AF24 /* EQDataLayer.m in Sources */,
+				6B2D5181176CC5F50044AF24 /* EQDataManager.m in Sources */,
+				6B2D5198176CD7110044AF24 /* Cliente.m in Sources */,
+				6B2D519C176CF6D00044AF24 /* Articulo.m in Sources */,
+				6B2D519F176D2EA70044AF24 /* Pedido.m in Sources */,
+				6B2D51A2176D66B10044AF24 /* CtaCte.m in Sources */,
+				6B2D51A5176D66B90044AF24 /* Venta.m in Sources */,
+				6B2D51A8176D6D420044AF24 /* EQBlockUI.m in Sources */,
+				6B2D51AB176D7E850044AF24 /* EQProductsViewModel.m in Sources */,
+				6B2D51B1176D8A530044AF24 /* EQProductCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

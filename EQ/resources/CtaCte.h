@@ -2,7 +2,7 @@
 //  CtaCte.h
 //  EQ
 //
-//  Created by Sebastian Borda on 6/12/13.
+//  Created by Sebastian Borda on 6/16/13.
 //  Copyright (c) 2013 EQ. All rights reserved.
 //
 
@@ -17,7 +17,7 @@
 @property (nonatomic, retain) NSString * condicionDeVenta;
 @property (nonatomic, retain) NSString * diasDeAtraso;
 @property (nonatomic, retain) NSString * empresa;
-@property (nonatomic, retain) NSString * fecha;
+@property (nonatomic, retain) NSDate * fecha;
 @property (nonatomic, retain) NSNumber * identifier;
 @property (nonatomic, retain) NSNumber * importe;
 @property (nonatomic, retain) NSNumber * importeConDescuento;

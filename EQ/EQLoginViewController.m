@@ -58,7 +58,8 @@
 }
 
 - (void)loginFail{
-    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Usuario o contraseña son incorrectos" delegate:nil cancelButtonTitle:@"Reintentar" otherButtonTitles:nil];
+    [alert show];
 }
 
 @end

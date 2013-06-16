@@ -8,10 +8,12 @@
 
 #import "AppDelegate.h"
 #import "EQLoginViewController.h"
+#import "EQBlockUI.h"
 
 @interface AppDelegate()
 
 @property (nonatomic,strong) UINavigationController *navigationController;
+@property (nonatomic,strong) EQBlockUI *blockUI;
 
 @end
 
@@ -59,6 +61,18 @@
 - (void)goToTabAtIndex:(int)index{
     [self.navigationController pushViewController:self.tabBarController animated:YES];
     self.tabBarController.selectedIndex = index;
+}
+
+- (void)lockUI{
+    if (!self.blockUI) {
+        self.blockUI = [[EQBlockUI alloc] initWithOwnerView:self.window];
+    }
+    
+    [self.blockUI block];
+}
+
+- (void)unLockUI{
+    [self.blockUI unblock];
 }
 
 @end

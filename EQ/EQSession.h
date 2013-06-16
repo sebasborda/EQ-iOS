@@ -6,12 +6,18 @@
 //  Copyright (c) 2013 EQ. All rights reserved.
 //
 
+#import "Usuario.h"
 #import "Vendedor.h"
 #import "Usuario.h"
 
 @interface EQSession : NSObject
 
-@property (nonatomic, strong) Vendedor *currentSeller;
++ (EQSession *)sharedInstance;
+
 @property (nonatomic, strong) Cliente *activeClient;
+@property (nonatomic, strong) Usuario *currentUser;
+
+- (NSDate *)lastSynchronization;
+- (void)initializeDataSynchronization;
 
 @end

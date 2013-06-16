@@ -2,7 +2,7 @@
 //  Cliente.h
 //  EQ
 //
-//  Created by Sebastian Borda on 6/12/13.
+//  Created by Sebastian Borda on 6/15/13.
 //  Copyright (c) 2013 EQ. All rights reserved.
 //
 
@@ -48,7 +48,7 @@
 @property (nonatomic, retain) LineaVTA *lineaDeVenta;
 @property (nonatomic, retain) NSSet *pedidos;
 @property (nonatomic, retain) Vendedor *vendedor;
-@property (nonatomic, retain) Venta *venta;
+@property (nonatomic, retain) NSSet *venta;
 @property (nonatomic, retain) Provincia *zona;
 @property (nonatomic, retain) ZonaEnvio *zonaEnvio;
 @end
@@ -64,5 +64,10 @@
 - (void)removePedidosObject:(Pedido *)value;
 - (void)addPedidos:(NSSet *)values;
 - (void)removePedidos:(NSSet *)values;
+
+- (void)addVentaObject:(Venta *)value;
+- (void)removeVentaObject:(Venta *)value;
+- (void)addVenta:(NSSet *)values;
+- (void)removeVenta:(NSSet *)values;
 
 @end

@@ -52,7 +52,9 @@
         self.urlRequest = [httpClient requestWithMethod:@"POST" path:@"" parameters:params];
     } else {
         for (NSString *key in params.allKeys) {
-            [queryString appendFormat:@"&%@=%@",key,params[key]];
+            NSString *value = [NSString stringWithFormat:@"%@",params[key]];
+            value = [value stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+            [queryString appendFormat:@"&%@=%@",key,value];
         }
         self.urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:queryString]];
     }
